@@ -1,0 +1,11 @@
+{
+    "name": "root/php-other-lib",
+    "autoload": {
+        "psr-4": {
+            "Root\\PhpOtherLib\\": "src/"
+        }
+    },
+    "require": {
+        "keboola/php-datatypes": "11.0"
+    }
+}
