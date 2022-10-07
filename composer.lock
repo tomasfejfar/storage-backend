@@ -4,21 +4,21 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "39cd19df1d38a3c864b6b921ba570ace",
+    "content-hash": "85dd81ab1948c019399aa141375d14c9",
     "packages": [],
     "packages-dev": [
         {
             "name": "symplify/monorepo-builder",
-            "version": "11.1.10",
+            "version": "dev-tf-remove-vendor-prefix-operation",
             "source": {
                 "type": "git",
-                "url": "https://github.com/symplify/monorepo-builder.git",
-                "reference": "d16daa85d0c9e16ac0464d4c90b2274cff38329b"
+                "url": "https://github.com/tomasfejfar/monorepo-builder.git",
+                "reference": "d03902fba6e1d3c711b3d02fd36446a74d9b35e4"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symplify/monorepo-builder/zipball/d16daa85d0c9e16ac0464d4c90b2274cff38329b",
-                "reference": "d16daa85d0c9e16ac0464d4c90b2274cff38329b",
+                "url": "https://api.github.com/repos/tomasfejfar/monorepo-builder/zipball/d03902fba6e1d3c711b3d02fd36446a74d9b35e4",
+                "reference": "d03902fba6e1d3c711b3d02fd36446a74d9b35e4",
                 "shasum": ""
             },
             "require": {
@@ -33,30 +33,31 @@
                     "dev-main": "10.3-dev"
                 }
             },
-            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "MIT"
             ],
             "description": "Prefixed version of Not only Composer tools to build a Monorepo.",
             "support": {
-                "source": "https://github.com/symplify/monorepo-builder/tree/11.1.10"
+                "source": "https://github.com/tomasfejfar/monorepo-builder/tree/tf-remove-vendor-prefix-operation"
             },
             "funding": [
                 {
-                    "url": "https://www.paypal.me/rectorphp",
-                    "type": "custom"
+                    "type": "github",
+                    "url": "https://github.com/tomasvotruba"
                 },
                 {
-                    "url": "https://github.com/tomasvotruba",
-                    "type": "github"
+                    "type": "custom",
+                    "url": "https://www.paypal.me/rectorphp"
                 }
             ],
-            "time": "2022-09-29T10:41:08+00:00"
+            "time": "2022-10-07T16:46:50+00:00"
         }
     ],
     "aliases": [],
     "minimum-stability": "stable",
-    "stability-flags": [],
+    "stability-flags": {
+        "symplify/monorepo-builder": 20
+    },
     "prefer-stable": false,
     "prefer-lowest": false,
     "platform": [],
