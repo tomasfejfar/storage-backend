@@ -26,8 +26,7 @@ jobs:
         run: |
           git config --global user.email "devel@keboola.com"                           
           git config --global user.name "Keboola CI"
-          LATEST_TAG=$(git -c 'versionsort.suffix=-'     ls-remote --exit-code --refs --sort='version:refname' --tags \
-          origin '*.*.*'     | tail --lines=1     | cut --fields=2)
+          LATEST_TAG=$(git -c 'versionsort.suffix=-' ls-remote --exit-code --refs --sort='version:refname' --tags origin '*.*.*' | cut --fields=2 | sed -E --expression="s/(refs\/tags\/)v/\1/g" | sort | tail --lines=1)
           git fetch origin $LATEST_TAG:$LATEST_TAG
           composer install
           php vendor/bin/monorepo-builder release ${{ inputs.version }}
