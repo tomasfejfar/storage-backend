@@ -6,7 +6,11 @@ on:
       version:
         description: 'Version'
         required: true
-        type: string
+        type: choice
+        options:
+          - patch
+          - minor
+          - major
 jobs:
   bare_run:
     runs-on: ubuntu-latest
