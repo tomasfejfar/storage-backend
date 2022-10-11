@@ -20,5 +20,7 @@ jobs:
           coverage: none
       -
         run: |
+          git config --global user.email "devel@keboola.com"                           
+          git config --global user.name "Keboola CI"
           composer install
           php vendor/bin/monorepo-builder release ${{ inputs.version }}
