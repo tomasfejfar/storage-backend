@@ -24,6 +24,7 @@ return static function (MBConfig $containerConfigurator): void {
         ],
     ]);
     $containerConfigurator->packageDirectories([__DIR__ . '/packages']);
+    $containerConfigurator->defaultBranch('main');
 
     $services = $containerConfigurator->services();
 
