@@ -20,4 +20,5 @@ jobs:
           coverage: none
       -
         run: |
+          composer install
           php vendor/bin/monorepo-builder list --ansi
