@@ -1,4 +1,5 @@
 {
+    "name": "keboola/storage-backend",
     "repositories": [
         {
             "url": "https://github.com/tomasfejfar/monorepo-builder.git",
