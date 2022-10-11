@@ -26,7 +26,7 @@ jobs:
         run: |
           git config --global user.email "devel@keboola.com"                           
           git config --global user.name "Keboola CI"
-          LATEST_TAG=$(git -c 'versionsort.suffix=-'     ls-remote --exit-code --refs --sort='version:refname' --tags 
+          LATEST_TAG=$(git -c 'versionsort.suffix=-'     ls-remote --exit-code --refs --sort='version:refname' --tags \
           origin '*.*.*'     | tail --lines=1     | cut --fields=1)
           git fetch origin $LATEST_TAG
           composer install
