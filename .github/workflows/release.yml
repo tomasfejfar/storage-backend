@@ -21,4 +21,4 @@ jobs:
       -
         run: |
           composer install
-          php vendor/bin/monorepo-builder release ${inputs.version}
+          php vendor/bin/monorepo-builder release ${{ inputs.version }}
