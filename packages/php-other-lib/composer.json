@@ -6,6 +6,6 @@
         }
     },
     "require": {
-        "keboola/php-datatypes": "11.0"
+        "keboola/php-datatypes": "^0.1.1"
     }
 }
